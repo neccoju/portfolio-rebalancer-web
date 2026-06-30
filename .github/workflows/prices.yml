@@ -1,0 +1,36 @@
+name: Update Price Cache
+
+on:
+  schedule:
+    - cron: '15 6 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Update public/prices.json
+        run: npm run prices:update
+
+      - name: Commit updated prices
+        run: |
+          if git diff --quiet public/prices.json; then
+            echo "No price cache changes."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/prices.json
+            git commit -m "chore: update price cache"
+            git push
+          fi

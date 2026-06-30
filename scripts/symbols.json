@@ -1,0 +1,12 @@
+[
+  { "symbol": "THYAO", "market": "BIST" },
+  { "symbol": "BIMAS", "market": "BIST" },
+  { "symbol": "KCHOL", "market": "BIST" },
+  { "symbol": "ASELS", "market": "BIST" },
+  { "symbol": "TUPRS", "market": "BIST" },
+  { "symbol": "AAPL", "market": "US" },
+  { "symbol": "NVDA", "market": "US" },
+  { "symbol": "MSFT", "market": "US" },
+  { "symbol": "VOO", "market": "US" },
+  { "symbol": "QQQM", "market": "US" }
+]
