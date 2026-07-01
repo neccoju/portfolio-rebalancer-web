@@ -1,6 +1,25 @@
 {
-  "generatedAt": null,
-  "source": "empty-cache",
-  "quotes": {},
+  "generatedAt": "2026-07-01T11:14:50.9535164+03:00",
+  "source": "manual-tradingview-seed",
+  "quotes": {
+    "BIST:ESCOM": {
+      "symbol": "ESCOM",
+      "market": "BIST",
+      "price": 5.97,
+      "currency": "TRY",
+      "source": "cache",
+      "provider": "TradingView Scanner",
+      "updatedAt": "2026-07-01T11:14:50.9535164+03:00"
+    },
+    "BIST:ISGSY": {
+      "symbol": "ISGSY",
+      "market": "BIST",
+      "price": 122.6,
+      "currency": "TRY",
+      "source": "cache",
+      "provider": "TradingView Scanner",
+      "updatedAt": "2026-07-01T11:14:50.9535164+03:00"
+    }
+  },
   "fx": {}
 }
