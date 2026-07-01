@@ -7,7 +7,7 @@ const cachePath = resolve(rootDir, 'public', 'prices.json');
 const symbolsPath = resolve(rootDir, 'scripts', 'symbols.json');
 const symbols = await readJson(symbolsPath, []);
 const existing = await readJson(cachePath, { generatedAt: null, source: 'empty-cache', quotes: {}, fx: {} });
-const next = { generatedAt: existing.generatedAt ?? null, source: 'github-actions-yahoo-finance', quotes: { ...(existing.quotes ?? {}) }, fx: { ...(existing.fx ?? {}) } };
+const next = { generatedAt: existing.generatedAt ?? null, source: 'github-actions-price-cache', quotes: { ...(existing.quotes ?? {}) }, fx: { ...(existing.fx ?? {}) } };
 let updated = false;
 
 for (const item of symbols) {
@@ -45,8 +45,15 @@ async function fetchQuote(symbol, market) {
   const normalizedSymbol = String(symbol).trim().toUpperCase().replace(/\.IS$/, '');
   const normalizedMarket = market === 'BIST' ? 'BIST' : 'US';
   const yahooSymbol = normalizedMarket === 'BIST' ? `${normalizedSymbol}.IS` : normalizedSymbol;
-  const price = await fetchYahooPrice(yahooSymbol);
-  return { symbol: normalizedSymbol, market: normalizedMarket, price, currency: normalizedMarket === 'BIST' ? 'TRY' : 'USD', source: 'cache', provider: 'Yahoo Finance', updatedAt: new Date().toISOString() };
+
+  try {
+    const price = await fetchYahooPrice(yahooSymbol);
+    return { symbol: normalizedSymbol, market: normalizedMarket, price, currency: normalizedMarket === 'BIST' ? 'TRY' : 'USD', source: 'cache', provider: 'Yahoo Finance', updatedAt: new Date().toISOString() };
+  } catch (error) {
+    if (normalizedMarket !== 'BIST') throw error;
+    const price = await fetchTradingViewPrice(normalizedSymbol);
+    return { symbol: normalizedSymbol, market: 'BIST', price, currency: 'TRY', source: 'cache', provider: 'TradingView Scanner', updatedAt: new Date().toISOString() };
+  }
 }
 
 async function fetchYahooPrice(yahooSymbol) {
@@ -57,5 +64,22 @@ async function fetchYahooPrice(yahooSymbol) {
   const result = json.chart?.result?.[0];
   const price = result?.meta?.regularMarketPrice ?? result?.meta?.previousClose;
   if (!price || price <= 0) throw new Error(json.chart?.error?.description ?? 'price missing');
+  return price;
+}
+
+async function fetchTradingViewPrice(symbol) {
+  const response = await fetch('https://scanner.tradingview.com/turkey/scan', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', accept: 'application/json', 'user-agent': 'portfolio-rebalancer-web price cache' },
+    body: JSON.stringify({
+      symbols: { tickers: [`BIST:${symbol}`], query: { types: [] } },
+      columns: ['name', 'close', 'currency'],
+    }),
+  });
+
+  if (!response.ok) throw new Error(`TradingView HTTP ${response.status}`);
+  const json = await response.json();
+  const price = json.data?.[0]?.d?.[1];
+  if (!price || price <= 0) throw new Error('TradingView price missing');
   return price;
 }
