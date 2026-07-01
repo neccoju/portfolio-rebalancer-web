@@ -4,6 +4,8 @@
   { "symbol": "KCHOL", "market": "BIST" },
   { "symbol": "ASELS", "market": "BIST" },
   { "symbol": "TUPRS", "market": "BIST" },
+  { "symbol": "ESCOM", "market": "BIST" },
+  { "symbol": "ISGSY", "market": "BIST" },
   { "symbol": "AAPL", "market": "US" },
   { "symbol": "NVDA", "market": "US" },
   { "symbol": "MSFT", "market": "US" },
