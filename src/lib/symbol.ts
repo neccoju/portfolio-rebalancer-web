@@ -1,9 +1,9 @@
 import type { Market } from '../types/portfolio';
 
 const KNOWN_BIST_SYMBOLS = new Set([
-  'AEFES', 'AKBNK', 'ASELS', 'BIMAS', 'EREGL', 'FROTO', 'GARAN', 'ISCTR',
-  'KCHOL', 'PETKM', 'PGSUS', 'SAHOL', 'SISE', 'TAVHL', 'TCELL', 'THYAO',
-  'TOASO', 'TUPRS', 'YKBNK',
+  'AEFES', 'AKBNK', 'ASELS', 'BIMAS', 'EREGL', 'ESCOM', 'FROTO', 'GARAN',
+  'ISCTR', 'ISGSY', 'KCHOL', 'PETKM', 'PGSUS', 'SAHOL', 'SISE', 'TAVHL',
+  'TCELL', 'THYAO', 'TOASO', 'TUPRS', 'YKBNK',
 ]);
 
 export function normalizeUserSymbol(symbol: string): string {
