@@ -1,122 +1,122 @@
 {
-  "generatedAt": "2026-09-18T11:10:53.574Z",
+  "generatedAt": "2026-09-21T12:44:14.417Z",
   "source": "github-actions-price-cache",
   "quotes": {
     "BIST:ESCOM": {
       "symbol": "ESCOM",
       "market": "BIST",
-      "price": 4.58,
+      "price": 4.4,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:53.116Z"
+      "updatedAt": "2026-09-21T12:44:14.036Z"
     },
     "BIST:ISGSY": {
       "symbol": "ISGSY",
       "market": "BIST",
-      "price": 14.51,
+      "price": 14.19,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:53.161Z"
+      "updatedAt": "2026-09-21T12:44:14.083Z"
     },
     "BIST:THYAO": {
       "symbol": "THYAO",
       "market": "BIST",
-      "price": 288.25,
+      "price": 288,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:52.775Z"
+      "updatedAt": "2026-09-21T12:44:13.640Z"
     },
     "BIST:BIMAS": {
       "symbol": "BIMAS",
       "market": "BIST",
-      "price": 418.75,
+      "price": 422,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:52.852Z"
+      "updatedAt": "2026-09-21T12:44:13.745Z"
     },
     "BIST:KCHOL": {
       "symbol": "KCHOL",
       "market": "BIST",
-      "price": 218.8,
+      "price": 217.7,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:52.915Z"
+      "updatedAt": "2026-09-21T12:44:13.816Z"
     },
     "BIST:ASELS": {
       "symbol": "ASELS",
       "market": "BIST",
-      "price": 378.25,
+      "price": 376.75,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:52.984Z"
+      "updatedAt": "2026-09-21T12:44:13.897Z"
     },
     "BIST:TUPRS": {
       "symbol": "TUPRS",
       "market": "BIST",
-      "price": 416.5,
+      "price": 420.25,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:53.076Z"
+      "updatedAt": "2026-09-21T12:44:13.974Z"
     },
     "US:AAPL": {
       "symbol": "AAPL",
       "market": "US",
-      "price": 337,
+      "price": 336.13,
       "currency": "USD",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:53.257Z"
+      "updatedAt": "2026-09-21T12:44:14.152Z"
     },
     "US:NVDA": {
       "symbol": "NVDA",
       "market": "US",
-      "price": 219.34,
+      "price": 222.27,
       "currency": "USD",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:53.306Z"
+      "updatedAt": "2026-09-21T12:44:14.239Z"
     },
     "US:MSFT": {
       "symbol": "MSFT",
       "market": "US",
-      "price": 497.75,
+      "price": 493.78,
       "currency": "USD",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:53.364Z"
+      "updatedAt": "2026-09-21T12:44:14.291Z"
     },
     "US:VOO": {
       "symbol": "VOO",
       "market": "US",
-      "price": 701.03,
+      "price": 701.78,
       "currency": "USD",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:53.434Z"
+      "updatedAt": "2026-09-21T12:44:14.339Z"
     },
     "US:QQQM": {
       "symbol": "QQQM",
       "market": "US",
-      "price": 295.2,
+      "price": 296.91,
       "currency": "USD",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:53.509Z"
+      "updatedAt": "2026-09-21T12:44:14.374Z"
     }
   },
   "fx": {
     "USDTRY": {
-      "rate": 48.781,
+      "rate": 48.7966,
       "source": "live",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-18T11:10:53.574Z"
+      "updatedAt": "2026-09-21T12:44:14.417Z"
     }
   }
 }
