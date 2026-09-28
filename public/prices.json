@@ -1,122 +1,122 @@
 {
-  "generatedAt": "2026-09-25T11:47:59.002Z",
+  "generatedAt": "2026-09-28T13:49:50.305Z",
   "source": "github-actions-price-cache",
   "quotes": {
     "BIST:ESCOM": {
       "symbol": "ESCOM",
       "market": "BIST",
-      "price": 4.55,
+      "price": 4.44,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.745Z"
+      "updatedAt": "2026-09-28T13:49:49.819Z"
     },
     "BIST:ISGSY": {
       "symbol": "ISGSY",
       "market": "BIST",
-      "price": 13.34,
+      "price": 12.95,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.777Z"
+      "updatedAt": "2026-09-28T13:49:49.917Z"
     },
     "BIST:THYAO": {
       "symbol": "THYAO",
       "market": "BIST",
-      "price": 290.75,
+      "price": 288.5,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.514Z"
+      "updatedAt": "2026-09-28T13:49:49.478Z"
     },
     "BIST:BIMAS": {
       "symbol": "BIMAS",
       "market": "BIST",
-      "price": 428.75,
+      "price": 422.5,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.580Z"
+      "updatedAt": "2026-09-28T13:49:49.555Z"
     },
     "BIST:KCHOL": {
       "symbol": "KCHOL",
       "market": "BIST",
-      "price": 217.8,
+      "price": 213.1,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.629Z"
+      "updatedAt": "2026-09-28T13:49:49.625Z"
     },
     "BIST:ASELS": {
       "symbol": "ASELS",
       "market": "BIST",
-      "price": 371.25,
+      "price": 365,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.675Z"
+      "updatedAt": "2026-09-28T13:49:49.692Z"
     },
     "BIST:TUPRS": {
       "symbol": "TUPRS",
       "market": "BIST",
-      "price": 407.5,
+      "price": 397.75,
       "currency": "TRY",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.722Z"
+      "updatedAt": "2026-09-28T13:49:49.776Z"
     },
     "US:AAPL": {
       "symbol": "AAPL",
       "market": "US",
-      "price": 335.92,
+      "price": 342.058,
       "currency": "USD",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.834Z"
+      "updatedAt": "2026-09-28T13:49:50.036Z"
     },
     "US:NVDA": {
       "symbol": "NVDA",
       "market": "US",
-      "price": 224.58,
+      "price": 232.72,
       "currency": "USD",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.870Z"
+      "updatedAt": "2026-09-28T13:49:50.084Z"
     },
     "US:MSFT": {
       "symbol": "MSFT",
       "market": "US",
-      "price": 497.93,
+      "price": 505.175,
       "currency": "USD",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.888Z"
+      "updatedAt": "2026-09-28T13:49:50.163Z"
     },
     "US:VOO": {
       "symbol": "VOO",
       "market": "US",
-      "price": 706.99,
+      "price": 706.03,
       "currency": "USD",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.938Z"
+      "updatedAt": "2026-09-28T13:49:50.216Z"
     },
     "US:QQQM": {
       "symbol": "QQQM",
       "market": "US",
-      "price": 305.14,
+      "price": 304.015,
       "currency": "USD",
       "source": "cache",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:58.971Z"
+      "updatedAt": "2026-09-28T13:49:50.266Z"
     }
   },
   "fx": {
     "USDTRY": {
-      "rate": 48.96,
+      "rate": 48.9779,
       "source": "live",
       "provider": "Yahoo Finance",
-      "updatedAt": "2026-09-25T11:47:59.002Z"
+      "updatedAt": "2026-09-28T13:49:50.305Z"
     }
   }
 }
